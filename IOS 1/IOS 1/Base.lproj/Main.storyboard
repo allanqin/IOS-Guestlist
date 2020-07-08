@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IOS_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Guest Queue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4V-rl-30o">
+                                <rect key="frame" x="69" y="254" width="276" height="275"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruG-Y4-wci">
+                                <rect key="frame" x="157" y="782" width="100" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Remove Guest">
+                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="removeGuest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Svc-vs-F4u"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Guest Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vx-fL-FJr">
+                                <rect key="frame" x="69" y="113" width="276" height="53"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53.000000000000057" id="Sup-Xg-qtU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Next Guests:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uc-q5-OHa">
+                                <rect key="frame" x="75" y="206" width="114" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Current Guest:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prh-8y-8at">
+                                <rect key="frame" x="73" y="67" width="121" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGP-Mg-bYk">
+                                <rect key="frame" x="153.5" y="727" width="107" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Add New Guest"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vzB-TF-Xx2"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Input Guest Name" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mdx-jz-hcN">
+                                <rect key="frame" x="134.5" y="683" width="145" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2vx-fL-FJr" secondAttribute="trailing" multiplier="1.2" id="0OK-zt-r8I"/>
+                            <constraint firstItem="y4V-rl-30o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2xN-5t-kZb"/>
+                            <constraint firstItem="sGP-Mg-bYk" firstAttribute="top" secondItem="mdx-jz-hcN" secondAttribute="bottom" constant="10" id="70X-l8-3V6"/>
+                            <constraint firstItem="sGP-Mg-bYk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8EZ-FT-BGY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y4V-rl-30o" secondAttribute="trailing" multiplier="1.2" id="9ad-rT-KyZ"/>
+                            <constraint firstItem="5uc-q5-OHa" firstAttribute="top" secondItem="2vx-fL-FJr" secondAttribute="bottom" constant="39.999999999999943" id="DZS-S5-RYY"/>
+                            <constraint firstItem="2vx-fL-FJr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="113" id="H7K-ph-EZr"/>
+                            <constraint firstItem="2vx-fL-FJr" firstAttribute="top" secondItem="prh-8y-8at" secondAttribute="bottom" constant="8" symbolic="YES" id="HZZ-pC-cBY"/>
+                            <constraint firstItem="ruG-Y4-wci" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kzg-YF-Z3D"/>
+                            <constraint firstItem="ruG-Y4-wci" firstAttribute="top" secondItem="sGP-Mg-bYk" secondAttribute="bottom" constant="25" id="NBd-Aj-ewN"/>
+                            <constraint firstItem="mdx-jz-hcN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Obt-w9-ZPA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ruG-Y4-wci" secondAttribute="bottom" constant="50" id="Sb6-gr-qE9"/>
+                            <constraint firstItem="2vx-fL-FJr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UYT-CJ-Kus"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="currentGuest" destination="2vx-fL-FJr" id="Vwr-C9-K0s"/>
+                        <outlet property="guestInput" destination="mdx-jz-hcN" id="G1O-Fc-VEn"/>
+                        <outlet property="result" destination="y4V-rl-30o" id="2Mq-nF-mdd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.85185185185185" y="120"/>
+        </scene>
+    </scenes>
+</document>
